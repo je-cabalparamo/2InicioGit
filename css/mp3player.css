@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-player {
+    width: 350px;
+    height: 650px;
+    background-color: rgba(173, 25, 25, 0.796);
+    border-radius: 20px;
+    box-shadow: 0 40px 100px rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    color:aquamarine;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color:lightsalmon;
+}
+
+.music-name, .artist-name {
+    text-align: center;
+    text-transform: capitalize;
+    color: gold;
+}
+
+.music-name{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.artist-name{
+    font-size: 20px;
+}
+
+.disk {
+    position: relative;
+    display: block;
+    margin: 40px auto;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-image: url('../Images/diablorojo.png'); /*'./Images/cover \ 1.png'*/
+    background-size: cover;
+    box-shadow: 0 0 0 10px;
+    animation: rotate 20s linear infinite;
+    animation-play-state: paused;
+}
+
+.disk.play {
+    animation-play-state: running;
+}
+
+.disk::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+
+.song-slider {
+    width: 100%;
+    position: relative;
+}
+
+.seek-bar {
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: deepskyblue;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.seek-bar::-webkit-slider-thumb {
+    width: 1px;
+    height: 20px;
+    box-shadow: -400px 0 0 400px aquamarine;
+}
+
+.current-time, .song-duration {
+    font-size: 14px;
+}
+
+.song-duration {
+    position: absolute;
+    right: 0;
+}
+
+.controls {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.play-btn {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: greenyellow;
+    cursor: pointer;
+    border: none;
+}
+
+.play-btn span {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 30%;
+    border-radius: 2px;
+    background-color: darkgrey;
+    transition: 0.5s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
