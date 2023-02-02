@@ -5,11 +5,13 @@ const seekBar = document.querySelector('.seek-bar')
 const songName = document.querySelector('.music-name')
 const artistName = document.querySelector('.artist-name')
 const disk = document.querySelector('.disk')
-const currenTime = document.querySelector('.current-time')
+const currentTime = document.querySelector('.current-time')
 const musicDuration = document.querySelector('.song-duration')
 const playBtn = document.querySelector('.play-btn')
 const forwardBtn = document.querySelector('.forward-btn')
 const backwardBtn = document.querySelector('.backward-btn')
+const shuffleBtn = document.querySelector('.shuffle-btn')
+const repeatBtn = document.querySelector('.repeat-btn')
 
 
 playBtn.addEventListener('click', () => {
@@ -30,7 +32,7 @@ const setMusic = (i) => {
     songName.innerHTML = song.name
     artistName.innerHTML = song.artist
     disk.style.backgroundImage = `url('${song.cover}')`
-    currenTime.innerHTML = '00:00'
+    currentTime.innerHTML = '00:00'
     // Ponemos un delay
     setTimeout(() =>{
         seekBar.max = music.duration
@@ -54,9 +56,9 @@ const formatTime = (time) => {
 }
 
 setInterval(() => {
-    seekBar.value = music.currenTime
-    currenTime.innerHTML = formatTime(music.currenTime)
-    if(Math.floor(music.currenTime) === Math.floor(seekBar.max)) {
+    seekBar.value = music.currentTime
+    currentTime.innerHTML = formatTime(music.currentTime)
+    if(Math.floor(music.currentTime) === Math.floor(seekBar.max)) {
         forwardBtn.click()
     }
 }, 1000)
@@ -66,6 +68,16 @@ forwardBtn.addEventListener('click', () => {
         currentMusic = 0
     } else {
         currentMusic++
+    }
+    setMusic(currentMusic)
+    playMusic()
+})
+
+backwardBtn.addEventListener('click', () => {
+    if(currentMusic >= songs.length - 1){
+        currentMusic = 0
+    } else {
+        currentMusic--
     }
     setMusic(currentMusic)
     playMusic()

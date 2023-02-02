@@ -27,7 +27,7 @@ const songs = [
         name:'Without Question',
         path: '../Music/01 - Without Question (Movie Version).mp3',
         artist: 'Elton John',
-        cover: '../Images/diablo rojo.jpg'
+        cover: '../Images/ElDorado.jpg'
     },
     {
         name:'You Rock My World',
@@ -48,7 +48,7 @@ const songs = [
         cover: '../Images/Don.jpg'
     },
     {
-        name:'Don´t Stop Me Now',
+        name:'Don\'t Stop Me Now',
         path: '../Music/Dont Stop Me Now.mp3',
         artist: 'Queen',
         cover: '../Images/Queen_Jazz.png'
@@ -88,5 +88,113 @@ const songs = [
         path: '../Music/La Camisa Negra.mp3',
         artist: 'Juanes',
         cover: '../Images/camisanegra.png'
+    },
+    {
+        name:'Makes Me Wonder',
+        path: '../Music/Makes Me Wonder.mp3',
+        artist: 'Maroon 5',
+        cover: '../Images/makes me wonder.png'
+    },
+    {
+        name:'Master of Puppets',
+        path: '../Music/Master Of Puppets (Remastered).mp3',
+        artist: 'Metallica',
+        cover: '../Images/Metallica_-_Master_of_Puppets_cover.jpg'
+    },
+    {
+        name:'Me Enamora',
+        path: '../Music/Me Enamora.mp3',
+        artist: 'Juanes',
+        cover: '../Images/me enamora.jpg'
+    },
+    {
+        name:'Never Forget',
+        path: '../Music/Never Forget.mp3',
+        artist: 'Sampa The Great',
+        cover: '../Images/never forget.png'
+    },
+    {
+        name:'Never Gonna Give You Up',
+        path: '../Music/Never Gonna Give You Up.mp3',
+        artist: 'Rick Astley',
+        cover: '../Images/never-gonna-give.png'
+    },
+    {
+        name:'Odo',
+        path: '../Music/Odo.mp3',
+        artist: 'Ado',
+        cover: '../Images/odo.png'
+    },
+    {
+        name:'Redbone',
+        path: '../Music/Redbone.mp3',
+        artist: 'Childish Gambino',
+        cover: '../Images/Childish_Gambino_-_Awaken,_My_Love!.png'
+    },
+    {
+        name:'Saturno',
+        path: '../Music/Saturno.mp3',
+        artist: 'Pablo Alborán',
+        cover: '../Images/pablo-alboran-prometo-e1516624234224.jpg'
+    },
+    {
+        name:'Save Your Tears',
+        path: '../Music/Save Your Tears.mp3',
+        artist: 'The Weeknd',
+        cover: '../Images/The_Weeknd_-_After_Hours.png'
+    },
+    {
+        name:'Somewhere Only We Know',
+        path: '../Music/Somewhere Only We Know.mp3',
+        artist: 'Keane',
+        cover: '../Images/Hopes_and_Fears.jpg'
+    },
+    {
+        name:'Feel (The Power Of Now)',
+        path: '../Music/Steve Aoki - Feel (The Power Of Now).mp3',
+        artist: 'Steve Aoki',
+        cover: '../Images/FeelThePowerNow.jpg'
+    },
+    {
+        name:'Tacones Rojos',
+        path: '../Music/Tacones Rojos.mp3',
+        artist: 'Sebastián Yatra',
+        cover: '../Images/sebastian_yatra_tacones_rojos-portada.jpg'
+    },
+    {
+        name:'Tears',
+        path: '../Music/Tears (feat. Louisa Johnson).mp3',
+        artist: 'Clean Bandit Feat. Louisa Johnson',
+        cover: '../Images/Clean_Bandit_-_Tears_(art).png'
+    },
+    {
+        name:'The Pink Phantom',
+        path: '../Music/The Pink Phantom (feat. Elton John and 6LACK).mp3',
+        artist: 'Gorillaz Feat. Elton John and 6LACK',
+        cover: '../Images/Song_Machine_Season_One_Strange_Timez.png'
+    },
+    {
+        name:'This Ain\'t a Scene, It\'s an Arms Race',
+        path: '../Music/This Aint a Scene, Its an Arms Race.mp3',
+        artist: 'Fall Out Boy',
+        cover: '../Images/Infinityonhigh.jpg'
+    },
+    {
+        name:'Time Left',
+        path: '../Music/残機.mp3',
+        artist: 'ZUTOMAYO',
+        cover: '../Images/zuto-time-left.jpg'
+    },
+    {
+        name:'What A Life',
+        path: '../Music/What A Life (From the Motion Picture Another Round).mp3',
+        artist: 'Scarlet Pleasure',
+        cover: '../Images/anotherround.jpg'
+    },
+    {
+        name:'Wherever I May Roam',
+        path: '../Music/Wherever I May Roam (Remastered).mp3',
+        artist: 'Metallica',
+        cover: '../Images/Metallica_-_Metallica_cover.jpg'
     },
 ]
