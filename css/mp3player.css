@@ -11,6 +11,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../Images/time-left.jpg);
+    background-size: cover;
 }
 
 .music-player {
@@ -52,7 +54,7 @@ h1 {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    background-image: url('../Images/diablorojo.png'); /*'./Images/cover \ 1.png'*/
+    background-image: url('../Images/diablo rojo.jpg'); /*'./Images/cover \ 1.png'*/
     background-size: cover;
     box-shadow: 0 0 0 10px;
     animation: rotate 20s linear infinite;
@@ -118,7 +120,7 @@ h1 {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: greenyellow;
+    background-color: gold;
     cursor: pointer;
     border: none;
 }
@@ -134,4 +136,58 @@ h1 {
     background-color: darkgrey;
     transition: 0.5s;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.play-btn span:nth-child(2) {
+    left: 50%;
+    transform-origin: center;
+}
+
+.play-btn.pause span:nth-child(2){
+    transform: translateY(-50%) scaleY(0);
+}
+
+.play-btn.pause span:nth-child(1) {
+    width: 35%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    border-radius: 0;
+    clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+
+.play-btn.pause{
+    animation: pulse 2s linear infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0;
+    }
+    50% {
+        box-shadow: 0 0 0 5px rgb(119, 38, 195);
+    }
+    100% {
+        box-shadow: 0 0 0 5px rgba(119, 38, 195, 0.275);
+    }
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    background-color: gold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
