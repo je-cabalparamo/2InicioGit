@@ -36,6 +36,18 @@ const songs = [
         cover: '../Images/Yrmwsingle.png'
     },
     {
+        name:'Alors On Danse',
+        path: '../Music/05 - Alors On Danse.mp3',
+        artist: 'Stromae',
+        cover: '../Images/Cheese_Stromae.jpg'
+    },
+    {
+        name:'CHAINSAW BLOOD',
+        path: '../Music/CHAINSAW BLOOD.mp3',
+        artist: 'VAUNDY',
+        cover: '../Images/chainsaw-blood.jpg'
+    },
+    {
         name:'Circles',
         path: '../Music/Circles.mp3',
         artist: 'Post Malone',
@@ -46,6 +58,12 @@ const songs = [
         path: '../Music/Don.mp3',
         artist: 'Miranda',
         cover: '../Images/Don.jpg'
+    },
+    {
+        name:'Done For Me',
+        path: '../Music/Done For Me.mp3',
+        artist: 'Charlie Puth feat. Kehlani',
+        cover: '../Images/Done For Me.png'
     },
     {
         name:'Don\'t Stop Me Now',
@@ -78,16 +96,52 @@ const songs = [
         cover: '../Images/everybodywants.png'
     },
     {
+        name:'goosebumps',
+        path: '../Music/Goosebumps.mp3',
+        artist: 'Travis Scott',
+        cover: '../Images/goosebumps.png'
+    },
+    {
         name:'Glimpse of Us',
         path: '../Music/Glimpse of Us.mp3',
         artist: 'Joji',
         cover: '../Images/Joji_-_Glimpse_of_Us.png'
     },
     {
+        name:'Here We Go',
+        path: '../Music/Here We Go.mp3',
+        artist: 'Chris Classic',
+        cover: '../Images/herewego.jpg'
+    },
+    {
+        name:'Hero',
+        path: '../Music/Hero (feat. Joey Scott).mp3',
+        artist: 'Chad Kroeger feat. Joey Scott',
+        cover: '../Images/herochad.png'
+    },
+    {
+        name:'Holding Out For a Hero',
+        path: '../Music/Holding Out for a Hero.mp3',
+        artist: 'Bonnie Tyler',
+        cover: '../Images/footloose.jpg'
+    },
+    {
+        name:'It Was a Good Day',
+        path: '../Music/It Was a Good Day.mp3',
+        artist: 'Ice Cube',
+        cover: '../Images/goodday.jpg'
+    },
+    {
         name:'La Camisa Negra',
         path: '../Music/La Camisa Negra.mp3',
         artist: 'Juanes',
         cover: '../Images/camisanegra.png'
+    },
+    {
+        name:'Leave Me Alone',
+        path: '../Music/LEave Me Alone (2012 Remaster).mp3',
+        artist: 'Michael Jackson',
+        cover: '../Images/Bad.png'
     },
     {
         name:'Makes Me Wonder',
@@ -150,6 +204,12 @@ const songs = [
         cover: '../Images/Hopes_and_Fears.jpg'
     },
     {
+        name:'Suit & Tie',
+        path: '../Music/Suit & Tie.mp3',
+        artist: 'Justin Timberlake',
+        cover: '../Images/2020timber.png'
+    },
+    {
         name:'Feel (The Power Of Now)',
         path: '../Music/Steve Aoki - Feel (The Power Of Now).mp3',
         artist: 'Steve Aoki',
@@ -186,10 +246,22 @@ const songs = [
         cover: '../Images/zuto-time-left.jpg'
     },
     {
+        name:'Undefeatable (feat. Kellin Quinn)',
+        path: '../Music/Undefeatable (feat. Kellin Quinn).mp3',
+        artist: 'SEGA',
+        cover: '../Images/sonicfrontiers.jpg'
+    },
+    {
         name:'What A Life',
         path: '../Music/What A Life (From the Motion Picture Another Round).mp3',
         artist: 'Scarlet Pleasure',
         cover: '../Images/anotherround.jpg'
+    },
+    {
+        name:'What I\'ve Done',
+        path: '../Music/What I\'ve Done.mp3',
+        artist: 'LINKIN PARK',
+        cover: '../Images/whativedone.jpg'
     },
     {
         name:'Wherever I May Roam',
@@ -198,3 +270,10 @@ const songs = [
         cover: '../Images/Metallica_-_Metallica_cover.jpg'
     },
 ]
+
+/*
+Done For Me
+Chainsaw Blood
+goosebumps
+here we go
+*/

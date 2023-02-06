@@ -11,14 +11,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../Images/time-left.jpg);
-    background-size: cover;
+    background-image: url(../Images/time-left.gif);
+    background-size:cover;
 }
 
 .music-player {
     width: 350px;
     height: 650px;
-    background-color: rgba(173, 25, 25, 0.796);
+    background-color: rgba(11, 11, 69, 0.796);
     border-radius: 20px;
     box-shadow: 0 40px 100px rgba(255, 255, 255, 0.2);
     padding: 30px;
@@ -28,19 +28,25 @@ body{
 
 h1 {
     text-align: center;
-    color:lightsalmon;
+    color:rgb(191, 36, 194);
+}
+h2 {
+    text-align: center;
+    color:rgb(191, 36, 194);
+    font-size:large;
 }
 
 .music-name, .artist-name {
     text-align: center;
     text-transform: capitalize;
-    color: gold;
+    color: rgb(0, 102, 255);
 }
 
 .music-name{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 .artist-name{
@@ -107,7 +113,7 @@ h1 {
 }
 
 .controls {
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -120,7 +126,7 @@ h1 {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: gold;
+    background-color: rgb(132, 10, 209);
     cursor: pointer;
     border: none;
 }
@@ -174,7 +180,7 @@ h1 {
 .btn {
     width: 30px;
     height: 30px;
-    background-color: gold;
+    background-color: rgb(132, 10, 209);
     border-radius: 50%;
     display: flex;
     justify-content: center;

@@ -10,6 +10,7 @@ const musicDuration = document.querySelector('.song-duration')
 const playBtn = document.querySelector('.play-btn')
 const forwardBtn = document.querySelector('.forward-btn')
 const backwardBtn = document.querySelector('.backward-btn')
+////////////////////////////////////////////////////////////////////////////
 const shuffleBtn = document.querySelector('.shuffle-btn')
 const repeatBtn = document.querySelector('.repeat-btn')
 
@@ -70,7 +71,7 @@ forwardBtn.addEventListener('click', () => {
         currentMusic++
     }
     setMusic(currentMusic)
-    playMusic()
+    music.play()
 })
 
 backwardBtn.addEventListener('click', () => {
@@ -80,5 +81,23 @@ backwardBtn.addEventListener('click', () => {
         currentMusic--
     }
     setMusic(currentMusic)
-    playMusic()
+    music.play()
+})
+
+shuffleBtn.addEventListener('click', () => {
+    if(currentMusic >= songs.length - 1){
+        currentMusic = 0
+    } else {
+        currentMusic = Math.floor(Math.random() * songs.length) + 1;
+    }
+    setMusic(currentMusic)
+    music.play()
+})
+
+repeatBtn.addEventListener('click', () => {
+    if(currentMusic >= songs.length - 1){
+        currentMusic = 0
+    }
+    setMusic(currentMusic)
+    music.play()
 })
