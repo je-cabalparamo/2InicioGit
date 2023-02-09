@@ -84,6 +84,7 @@ backwardBtn.addEventListener('click', () => {
     music.play()
 })
 
+//////////////////////////////////////////////////////////////////////////
 shuffleBtn.addEventListener('click', () => {
     if(currentMusic >= songs.length - 1){
         currentMusic = 0

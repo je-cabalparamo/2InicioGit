@@ -115,7 +115,7 @@ const songs = [
     },
     {
         name:'Hero',
-        path: '../Music/Hero (feat. Joey Scott).mp3',
+        path: '../Music/Hero (feat. Josey Scott).mp3',
         artist: 'Chad Kroeger feat. Joey Scott',
         cover: '../Images/herochad.png'
     },
@@ -269,11 +269,18 @@ const songs = [
         artist: 'Metallica',
         cover: '../Images/Metallica_-_Metallica_cover.jpg'
     },
+    {
+        name:'Welcome to The Black Parade',
+        path: '../Music/Welcome To The Black Parade.mp3',
+        artist: 'My Chemical Romance',
+        cover: '../Images/Blackparadecover.jpg'
+    },
 ]
 
 /*
-Done For Me
-Chainsaw Blood
-goosebumps
-here we go
+cak by the ocean
+welcome to the black parade
+locked out of heaven
+viva la vida
+escape from the city
 */
