@@ -64,6 +64,12 @@ setInterval(() => {
     }
 }, 1000)
 
+const playMusic = () => {
+    music.play()
+    playBtn.classList.remove('pause')
+    disk.classList.add('play')
+}
+
 forwardBtn.addEventListener('click', () => {
     if(currentMusic >= songs.length - 1){
         currentMusic = 0
@@ -71,17 +77,17 @@ forwardBtn.addEventListener('click', () => {
         currentMusic++
     }
     setMusic(currentMusic)
-    music.play()
+    playMusic()
 })
 
 backwardBtn.addEventListener('click', () => {
-    if(currentMusic >= songs.length - 1){
-        currentMusic = 0
+    if(currentMusic <= 0){
+        currentMusic = songs.length - 1
     } else {
         currentMusic--
     }
     setMusic(currentMusic)
-    music.play()
+    playMusic()
 })
 
 //////////////////////////////////////////////////////////////////////////
@@ -92,7 +98,7 @@ shuffleBtn.addEventListener('click', () => {
         currentMusic = Math.floor(Math.random() * songs.length) + 1;
     }
     setMusic(currentMusic)
-    music.play()
+    playMusic()
 })
 
 repeatBtn.addEventListener('click', () => {
@@ -100,5 +106,5 @@ repeatBtn.addEventListener('click', () => {
         currentMusic = 0
     }
     setMusic(currentMusic)
-    music.play()
+    playMusic()
 })
